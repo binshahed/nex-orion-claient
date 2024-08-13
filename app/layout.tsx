@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import { typography } from "@/typography";
+import { fonts } from "@/fonts";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={typography.bodyText}>
+      <body
+        className={`${fonts.montserrat.className} text-[16px] md:text-[18px] font-light`}
+      >
         <NavBar />
         {children}
+        <div className="relative flex py-5 items-center">
+          <div className="flex-grow border-t border-darkBlue"></div>
+          <div className="flex-grow border-t border-darkBlue"></div>
+        </div>
+        <Footer />
       </body>
     </html>
   );

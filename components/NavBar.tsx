@@ -20,7 +20,7 @@ const NavBar = () => {
     { id: 4, name: "Contact us", path: "/contact-us" }
   ];
   return (
-    <div className="py-5">
+    <header className="py-5">
       <div className="container mx-auto">
         <nav className="flex flex-col py-4 md:flex-row md:items-center">
           <div className="flex items-center justify-between md:w-2/5">
@@ -96,7 +96,7 @@ const NavBar = () => {
           {/* </div> */}
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
