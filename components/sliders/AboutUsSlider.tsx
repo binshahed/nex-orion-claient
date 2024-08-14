@@ -23,6 +23,20 @@ export default function AboutUsSlider() {
         freeMode={true}
         loop={true}
         modules={[FreeMode, Pagination, Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30
+          }
+        }}
         className="mySwiper"
       >
         {techData.map((data) => (

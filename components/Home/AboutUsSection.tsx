@@ -6,7 +6,7 @@ import AboutUsSlider from "../sliders/AboutUsSlider";
 
 const AboutUsSection = () => {
   return (
-    <section>
+    <section id="about-us">
       <HrLine>About Us</HrLine>
       <div className="min-h-[85vh] flex items-center justify-center">
         <div>

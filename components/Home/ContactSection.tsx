@@ -4,7 +4,7 @@ import { fonts } from "@/fonts";
 
 const ContactSection = () => {
   return (
-    <section>
+    <section id="contact-us">
       <HrLine>Contact</HrLine>
       <div className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -28,7 +28,7 @@ const ContactSection = () => {
               can bring your ideas to life.
             </p>
 
-            <div className="w-2/3 mx-auto p-6">
+            <div className="w-full md:w-2/3 lg:w-2/3 mx-auto p-6">
               <div className="mb-4">
                 <input
                   type="text"
@@ -52,9 +52,9 @@ const ContactSection = () => {
               </div>
               <div className="text-center">
                 <button
-                  className={`${fonts.adventPro.className} w-full font-semibold bg-buttonBlue text-darkBlue py-[10px] px-50 md:px-[100px] rounded-[40px] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px]`}
+                  className={`${fonts.adventPro.className} hover-effect w-full font-semibold bg-buttonBlue text-darkBlue py-[10px] px-50 md:px-[100px] rounded-[40px] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px]`}
                 >
-                  Submit
+                  Send Message
                 </button>
               </div>
             </div>

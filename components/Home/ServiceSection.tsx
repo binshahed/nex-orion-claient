@@ -5,7 +5,7 @@ import { serviceData } from "@/data/serviceData";
 
 const ServiceSection = () => {
   return (
-    <section className="lg:h-screen md:h-[100vh]">
+    <section className="lg:h-screen md:h-[90vh] fade-in" id="services">
       <HrLine>Service</HrLine>
       <div className="container">
         <h2
@@ -21,7 +21,7 @@ const ServiceSection = () => {
             <div
               className={`col-span-12  ${
                 index > 3 ? "md:col-span-4" : "md:col-span-3"
-              } border rounded-3xl p-[30px] font-normal`}
+              } border rounded-3xl p-[30px] font-normal hover-effect`}
               key={data?.title}
             >
               <Image width={52} height={52} src={data?.icon} alt="" />

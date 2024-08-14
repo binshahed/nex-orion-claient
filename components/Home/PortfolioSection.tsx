@@ -1,12 +1,11 @@
 import { fonts } from "@/fonts";
 import HrLine from "../HrLine";
-import Image from "next/image";
 import { projectData } from "@/data/projectData";
 import PortfolioSlider from "../sliders/PortfolioSlider";
 
 const PortfolioSection = () => {
   return (
-    <section className=" text-center">
+    <section className=" text-center" id="portfolio">
       <HrLine>Portfolio</HrLine>
       <div className="container">
         {projectData?.map((project) => (
@@ -31,7 +30,7 @@ const PortfolioSection = () => {
           </div>
         ))}
         <button
-          className={`${fonts.adventPro.className}  font-semibold bg-buttonBlue text-darkBlue py-[10px]  px-[100px] rounded-[40px] text-[24px] md:text-[28px] lg:text-[32px] mb-10`}
+          className={`${fonts.adventPro.className} hover-effect font-semibold bg-buttonBlue text-darkBlue py-[10px]  px-[100px] rounded-[40px] text-[24px] md:text-[28px] lg:text-[32px] mb-10`}
         >
           View All Projects
         </button>

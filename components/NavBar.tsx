@@ -12,15 +12,15 @@ const NavBar = () => {
   };
 
   const navItems = [
-    { id: 1, name: "Service", path: "/services" },
-    { id: 2, name: "Portfolio", path: "/portfolio" }
+    { id: 1, name: "Service", path: "/#services" },
+    { id: 2, name: "Portfolio", path: "/#portfolio" }
   ];
   const navItems1 = [
-    { id: 3, name: "About us", path: "/about-us" },
-    { id: 4, name: "Contact us", path: "/contact-us" }
+    { id: 3, name: "About us", path: "/#about-us" },
+    { id: 4, name: "Contact us", path: "/#contact-us" }
   ];
   return (
-    <header className="py-5">
+    <header className="fixed top-0 left-0 w-full z-50 bg-gray-800 py-5 bg-backgroundBlue shadow">
       <div className="container mx-auto">
         <nav className="flex flex-col py-4 md:flex-row md:items-center">
           <div className="flex items-center justify-between md:w-2/5">

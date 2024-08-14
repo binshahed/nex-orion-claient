@@ -1,24 +1,21 @@
+"use client";
+
 import { fonts } from "@/fonts";
+import BannerVideo from "../BannerVideo";
 
 const BannerSection = () => {
   return (
-    <section className="relative h-[85vh] flex items-center overflow-hidden">
+    <section className="relative h-[89vh] flex items-center overflow-hidden">
       {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 w-full h-full bg-backgroundBlue opacity-5 object-cover"
-      >
-        <source src="/video-bg-2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <BannerVideo />
 
       {/* Content */}
-      <div className="container relative z-10 h-full flex items-center">
+      <div className="container relative z-10 h-full flex items-center page-transition ">
         <div className="grid md:grid-cols-2 gap-4 w-full">
           <div>
-            <h1 className={`${fonts.adventPro.className} text-white heading-1`}>
+            <h1
+              className={`${fonts.adventPro.className} text-white heading-1 `}
+            >
               Innovation in every <br /> line of custom code
             </h1>
             <p className="text-[16px] sm:text-[18px] font-light mt-4 text-white">
@@ -28,7 +25,7 @@ const BannerSection = () => {
           </div>
           <div className="flex flex-col justify-end md:items-center">
             <button
-              className={`${fonts.adventPro.className} font-semibold bg-buttonBlue text-darkBlue py-[10px] px-50 md:px-[100px] rounded-[40px] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px]`}
+              className={`${fonts.adventPro.className} font-semibold bg-buttonBlue text-darkBlue py-[10px] px-50 md:px-[100px] rounded-[40px] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] hover-effect `}
             >
               Contact us
             </button>
