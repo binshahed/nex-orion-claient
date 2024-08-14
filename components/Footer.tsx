@@ -1,4 +1,6 @@
+import { fonts } from "@/fonts";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -23,7 +25,45 @@ const Footer = () => {
           <p>Privacy Policy </p>
           <p>Cookie Policy </p>
         </div>
-        <div></div>
+        <div className="space-y-4">
+          <p>Email</p>
+          <p className={`${fonts.adventPro.className} text-[24px] font-medium`}>
+            nexorionbd@gmail.com{" "}
+          </p>
+          <div className="flex space-x-4">
+            {/* {" "}
+            <Link
+              target="_blank"
+              href={"https://www.linkedin.com/company/nexorion/"}
+            >
+              <Image
+                src="/icons/social/twitter.svg"
+                alt="twitter"
+                width={32}
+                height={32}
+              />
+            </Link>{" "} */}
+            <Link
+              target="_blank"
+              href={"https://www.linkedin.com/company/nexorion/"}
+            >
+              <Image
+                src="/icons/social/Group.svg"
+                alt="twitter"
+                width={36}
+                height={36}
+              />
+            </Link>{" "}
+            <Link target="_blank" href={"https://www.facebook.com/nexorionIT"}>
+              <Image
+                src="/icons/social/fb.svg"
+                alt="twitter"
+                width={32}
+                height={32}
+              />
+            </Link>{" "}
+          </div>
+        </div>
       </div>
 
       <div className="relative flex py-5 items-center">

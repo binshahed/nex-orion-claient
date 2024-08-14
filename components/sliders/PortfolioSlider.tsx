@@ -38,7 +38,6 @@ const PortfolioSlider = ({
           ref={swiperRef}
           loop={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
           onSwiper={(swiper) => {
             swiperRef.current = swiper; // Store swiper instance
           }}

@@ -3,11 +3,12 @@ import HrLine from "../HrLine";
 import Counter from "../Counter";
 import AboutUsSlider from "../sliders/AboutUsSlider";
 
+
 const AboutUsSection = () => {
   return (
     <section>
       <HrLine>About Us</HrLine>
-      <div className="min-h-[95vh] flex items-center justify-center">
+      <div className="min-h-[85vh] flex items-center justify-center">
         <div>
           <div className="container mx-auto relative flex flex-wrap items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-7 gap-8 md:gap-28 w-full">
@@ -29,8 +30,10 @@ const AboutUsSection = () => {
               </div>
             </div>
           </div>
-          <AboutUsSlider />
         </div>
+      </div>
+      <div className="container">
+        <AboutUsSlider />
       </div>
     </section>
   );
